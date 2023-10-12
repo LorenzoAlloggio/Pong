@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class InputPaddle : MonoBehaviour
 {
-    public float speed = 8f;
+    public float speed = 10f;
     public string leftOrRight;
     // Start is called before the first frame update
 
@@ -19,36 +19,25 @@ public class InputPaddle : MonoBehaviour
     {
         if (leftOrRight == "Left")
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) && transform.position.y <= 4.317236)
             {
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
-            else if (Input.GetKey(KeyCode.S))
+            else if (Input.GetKey(KeyCode.S) && transform.position.y >= -4.317236)
             {
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
         }
         else if (leftOrRight == "Right")
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow) && transform.position.y <= 4.317236)
             {
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
+            else if (Input.GetKey(KeyCode.DownArrow) && transform.position.y >= -4.317236)
             {
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
-            else if (leftOrRight == "Right")
-            {
-                if (Input.GetKey(KeyCode.UpArrow))
-                {
-                    transform.Translate(Vector3.up * speed * Time.deltaTime);
-                }
-                else if (Input.GetKey(KeyCode.DownArrow))
-                {
-                    transform.Translate(Vector3.down * speed * Time.deltaTime);
-                }
             }
         }
     }
-}
