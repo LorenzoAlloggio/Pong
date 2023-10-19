@@ -76,12 +76,12 @@ public class Ball : MonoBehaviour
 
         if (Paddle_1_Score >= 5)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
         }
 
         if (Paddle_2_Score >= 5)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(5);
         }
 
         if (collision.gameObject.CompareTag("Paddle"))

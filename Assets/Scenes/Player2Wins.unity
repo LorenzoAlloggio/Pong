@@ -408,7 +408,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Again
+  m_Text: Main Menu
 --- !u!222 &388900935
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 510964472}
   - component: {fileID: 510964471}
   m_Layer: 5
-  m_Name: Play
+  m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1621895127}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: Play_Game
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -909,7 +909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0f750725b99494e9db3b0ff4b0cae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Play_Button: {fileID: 510964471}
+  Singleplayer_Button: {fileID: 0}
+  Multiplayer_Button: {fileID: 0}
   Quit_Button: {fileID: 381489144}
 --- !u!1 &2039421622
 GameObject:

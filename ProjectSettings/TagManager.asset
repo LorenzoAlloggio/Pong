@@ -9,6 +9,7 @@ TagManager:
   - HorizontalWall
   - Paddle
   - VerticalWall2
+  - Ball
   layers:
   - Default
   - TransparentFX

@@ -7,12 +7,33 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
 
-    public Button Play_Button;
+    public Button Singleplayer_Button;
+    public Button Multiplayer_Button;
     public Button Quit_Button;
 
-    public void Play_Game()
+    public void Singleplayer()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void Explanation()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void Multiplayer()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void IMPOSSIBLE()
+    {
+        SceneManager.LoadScene(9);
     }
 
     public void Quit_game()
