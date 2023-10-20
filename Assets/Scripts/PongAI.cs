@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PongAI : MonoBehaviour
 {
@@ -30,5 +31,15 @@ public class PongAI : MonoBehaviour
 
         // Update the paddle's position
         transform.position = new Vector3(transform.position.x, newYPosition, transform.position.z);
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            moveSpeed++;
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && moveSpeed > 0) // Check if moveSpeed is greater than 0
+        {
+            moveSpeed--;
+        }
+
     }
 }
