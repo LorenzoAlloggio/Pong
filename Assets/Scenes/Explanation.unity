@@ -698,7 +698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 103}
+  m_AnchoredPosition: {x: 0, y: 57}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389700862
@@ -735,13 +735,15 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Explanation:\nSingleplayer - Normal pong with an AI as you opponent (max
-    points 5)\nMultiplayer - Normal pong that allows you to fight against another
-    player. (max points 5)\nIMPOSSIBLE - Quite literally impossible. \nLike normal
+    points 5)\n\nMultiplayer - Normal pong that allows you to fight against another
+    player. (max points 5)\n\nIMPOSSIBLE - Quite literally impossible. \nLike normal
     mode, the ball gets sped up everytime it hits a paddle.\nHOWEVER, this time the
-    paddle of the player ALSO becomes faster. (max points 3, with music)\n\nTIP:
-    If you want to stop playing a certain gamemode press M.\n\nCHEAT: You can press
-    the UPARROW and DOWNARROW to increase and decrease the AI's speed.\nThat way
-    you can still see what happens when you win IMPOSSIBLE."
+    paddle of the player ALSO becomes faster. \nIt does NOT reset the speed after
+    scoring a point... (max points 3, with music)\n\nChaos - This is actually just
+    a test to see what would happen if AI battled against an AI\n\n\nTIP: If you
+    want to stop playing a certain gamemode press M.\n\nCHEAT: You can press the
+    UPARROW and DOWNARROW to increase and decrease the AI's speed.\nThat way you
+    can still see what happens when you win IMPOSSIBLE."
 --- !u!222 &1389700863
 CanvasRenderer:
   m_ObjectHideFlags: 0
